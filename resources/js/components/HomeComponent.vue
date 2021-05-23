@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<section class="content">
+		<section class="content p-2" >
 		  <div class="container-fluid">
 		    <!-- Small boxes (Stat box) -->
 		    <div class="row">

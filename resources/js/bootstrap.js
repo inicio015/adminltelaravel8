@@ -13,6 +13,8 @@ try {
     require('bootstrap');
     
     require('admin-lte');
+    
+	require('overlayscrollbars/js/jquery.overlayScrollbars.min')
 
 } catch (e) {}
 

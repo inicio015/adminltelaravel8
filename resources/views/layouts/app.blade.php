@@ -15,8 +15,8 @@
             base_path_vue_router = "{{ env('APP_PATH_LOCAL_VUE') }}";
         </script>
     @endif
+    @routes
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -34,5 +34,7 @@
     @else
         @include('template_parts.php_config')
     @endauth
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
 </body>
 </html>

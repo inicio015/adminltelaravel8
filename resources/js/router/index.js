@@ -1,24 +1,15 @@
 import VueRouter from 'vue-router'
-
-import Home from '../components/HomeComponent.vue';
-import Pruebas from '../components/PruebasComponent.vue';
-
+//component: () => import( "@/pages/Pruebas.vue"), IMPORT LAZY LOADING FAST
 
 let routes = [
 	{
 		path: '/home',
-        component: Home,
-        meta: {
-            requiresAuth: true,
-        }
-	},
-	{
-		path: '/pruebas',
-        component: Pruebas,
+        component: require('@/pages/Home.vue').default,
         meta: {
             requiresAuth: true,
         }
 	}
+
 ];
  
  
